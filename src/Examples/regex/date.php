@@ -9,8 +9,8 @@
             <p>Using Regular Expressions</p>
             <h2>Conversion Result</h2>
             <?php
-            if (isset($_POST["date"]) && mb_strlen($_POST["date"]) !== 0) {
-                $date = $_POST["date"];
+            if (isset($_POST["money"]) && mb_strlen($_POST["money"]) !== 0) {
+                $date = $_POST["money"];
 
                 if (preg_match("/(^[0-9]{4})-([0-9]{1,2})-([[:digit:]]{1,2}$)/", $date, $matches)) {
                     echo "<p>$matches[3].$matches[2].$matches[1]</p>";
